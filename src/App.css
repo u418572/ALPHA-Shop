@@ -32,7 +32,43 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+/* main */
+.main-container {
+  display: flex;
+  border: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.primarySection {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid red;
+  background-color: grey;
+  min-height: 600px;
+}
+
+.primaryTitle {
+  width: 90%;
+  text-align: start;
+  font-size: 2rem;
+  font-weight: 900;
+  border: 2px solid red;
+  margin: 0px auto;
+  line-height: 4rem;
+
+}
+
+.secondarySection {
+  width: 100%;
+  border: 2px solid red;
+  background-color: rgb(47, 197, 14);
+  min-height: 600px;
+}
+

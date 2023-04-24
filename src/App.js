@@ -5,7 +5,15 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-     <Progress />
+      <div className="main-container">
+        <div className="primarySection">
+          <div className="primaryTitle">結帳</div>
+          <Progress />
+        </div>
+        <div className="secondarySection"></div>
+       
+      </div>
+    
      
     </div>
   );
