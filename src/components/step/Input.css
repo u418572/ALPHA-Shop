@@ -1,0 +1,39 @@
+.inputFirst {
+  border: 1px solid #2A2A2A;
+  width: 160px;
+  height: 40px;
+  border-radius: 5px;
+  padding-left:15px;
+}
+
+.inputSecond {
+  border: 1px solid #2A2A2A;
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+.inputThird {
+  border: 1px solid #2A2A2A;
+  width: 251px;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+.inputFouth {
+  border: 1px solid #2A2A2A;
+  width: 255px;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+.coloor {
+  color: red;
+}
+
+.space {
+  margin-right: 30px;
+}
