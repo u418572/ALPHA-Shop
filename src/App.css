@@ -50,16 +50,14 @@
   width: 100%;
   padding: 15px;
   border: 2px solid red;
-  background-color: grey;
   min-height: 600px;
 }
 
 .primaryTitle {
-  width: 90%;
+  width: 98%;
   text-align: start;
   font-size: 2rem;
   font-weight: 900;
-  border: 2px solid red;
   margin: 0px auto;
   line-height: 4rem;
 
