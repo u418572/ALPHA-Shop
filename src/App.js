@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import Progress from './components/progress/Progress'
-import Step1 from './components/step/Step1'
+import Step from './components/step/Step'
 import './App.css';
 
 function App() {
@@ -8,9 +8,8 @@ function App() {
     <div className="App">
       <div className="main-container">
         <div className="primarySection">
-          
-          <Progress />
-          <Step1 />
+           <Progress />
+           <Step />
         </div>
        
         <div className="secondarySection"></div>

@@ -4,9 +4,7 @@ import StepSelect from './StepSelect'
 
 function Step1() {
   return (
-
-
-    <div className={styles.stepContainer}>
+     <div className={styles.stepContainer}>
       <div className={styles.title}>
         <h2>寄送地址</h2>
       </div>
@@ -17,11 +15,11 @@ function Step1() {
             <option value="ms">女士</option>
             <option value="mx">不明</option>
           </StepSelect>
-          <StepInput title='姓名' inputStyle='inputSecond' content='請輸入姓名' />
+          <StepInput type='text' title='姓名' inputStyle='inputSecond' content='請輸入姓名' />
         </div>
         <div className={styles.inputLine}>
-          <StepInput title='電話' inputStyle='inputThird' content='請輸入行動電話'/>
-          <StepInput title='Email' inputStyle='inputFouth' content='請輸入電子郵件' />
+          <StepInput type='tel' title='電話' inputStyle='inputThird' content='請輸入行動電話'/>
+          <StepInput type='email' title='Email' inputStyle='inputFouth' content='請輸入電子郵件' />
         </div>
         <div className={styles.inputLine}>
           <StepSelect title='縣市' inputStyle='inputFirst' inputSpace='space' >
@@ -56,18 +54,11 @@ function Step1() {
             <option value="KMN">金門縣</option>
             <option value="LNN">連江縣</option>
           </StepSelect>
-           <StepInput title='地址' inputStyle='inputSecond' content='請輸入地址' />
+           <StepInput type='text' title='地址' inputStyle='inputSecond' content='請輸入地址' />
         </div>
-
-
-      </div>
-
-    </div>
-
-
-
-
-  )
+       </div>
+     </div>
+   )
 }
 
 export default Step1

@@ -5,13 +5,18 @@
 }
 
 .stepContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
   width: 100%;
-  min-height: 80%vh;
+  min-height: 40%vh;
+  border: 1PX solid red;
 }
 
-.title {
+/* .title {
   text-align: start;
-}
+} */
 
 .inputLine {
   width: 100%;
@@ -25,7 +30,7 @@
   display: flex;
   flex-flow: column;
   position: relative;
- 
+
 }
 
 .inputTitle {
@@ -37,7 +42,7 @@
   position: relative;
   top: 0%;
   left: 0%;
-   }
+}
 
 
 .inputValue {
@@ -46,4 +51,50 @@
   color: #2A2A2A;
 }
 
+/* step2 */
 
+.transport {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.step2Content {
+  text-align: start;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.step2Input {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.radioGroup {
+  padding: 10px;
+  width: 100%;
+}
+
+input[type="radio"],
+input[type="radio"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="radio"] {
+  width: 22px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="radio"]:checked {
+  box-shadow: inset 0 0 0 5px black;
+}
