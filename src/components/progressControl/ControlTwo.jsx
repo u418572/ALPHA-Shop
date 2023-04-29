@@ -1,8 +1,7 @@
 import styles from './Control.module.css'
 import PreviousButton from './PreviousButton'
 import NextButton from './NextButton'
-import { ReactComponent as RightArrow } from '../imgs/right-arrow.svg'
-import { ReactComponent as LeftArrow } from '../imgs/left-arrow.svg'
+import './style.css' 
 function ControlTwo() {
   return (
     <div>
@@ -13,7 +12,7 @@ function ControlTwo() {
             <PreviousButton />
            </div>
           <div className={styles.buttonRight}>
-            <NextButton />
+            <NextButton content='下一步' show='' />
            </div>
         </div>
 

@@ -51,14 +51,14 @@ h1 {
 }
 
 .icon {
-  /* display: none; */
+  display: none;
   position: absolute;
   left: 0%;
   width: 26px;
   height: 26px;
 }
 
-.groupContainer:nth-child(2) .icon {
+.groupContainer:nth-child(3) .icon {
   display: inline;
 }
 

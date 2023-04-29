@@ -1,14 +1,16 @@
 import styles from './Control.module.css'
 import { ReactComponent as RightArrow } from '../imgs/right-arrow.svg'
-import { ReactComponent as LeftArrow } from '../imgs/left-arrow.svg'
-function NextButton() {
+import './style.css'
+function NextButton(props) {
   return (
     <div>
       <button className={styles.nextButton}>
         <div className={styles.rightGroup}>
-          <p>下一步</p>
-          <RightArrow />
-         </div>
+          <p>{props.content}</p>
+          <div className={props.show}>
+            <RightArrow />
+          </div>
+        </div>
       </button>
     </div>
   )

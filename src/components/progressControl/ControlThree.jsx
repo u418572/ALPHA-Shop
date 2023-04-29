@@ -1,23 +1,20 @@
 import styles from './Control.module.css'
 import PreviousButton from './PreviousButton'
 import NextButton from './NextButton'
-import { ReactComponent as RightArrow } from '../imgs/right-arrow.svg'
-import { ReactComponent as LeftArrow } from '../imgs/left-arrow.svg'
+import './style.css'
+
 function ControlThree() {
   return (
     <div>
       <div className={styles.controlContainer}>
+        <hr />
         <div className={styles.buttonLayout}>
           <div className={styles.buttonLeft}>
             <PreviousButton />
-              {/* <LeftArrow stroke="#000000" strokeWidth="0.2rem" /> */}
-           
-          </div>
+           </div>
           <div className={styles.buttonRight}>
-            <NextButton />
-              {/* <RightArrow stroke="#DB7290" strokeWidth="0.2rem" /> */}
-            
-          </div>
+            <NextButton content='確認下單' show='noshow'/>
+           </div>
         </div>
       </div>
     </div>

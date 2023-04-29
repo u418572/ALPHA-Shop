@@ -96,5 +96,8 @@ hr {
   gap: 5px;
   align-items: center;
   color:black;
+ }
 
-}
+ .show {
+   display: none;
+ }
