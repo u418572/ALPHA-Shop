@@ -20,6 +20,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
     1. /icons  裏面有所有用得到的icons
     2. /progress 引入 stepProgress , step , progressControl 三個form 的 components, 
  *  app.js 
-         <Progress1 /> -->代表stepProgress
-         <Progress2 /> -->代表step
-         <Progress3 /> -->代表rogressControl
+         Progress1 -->代表stepProgress
+         Progress2-->代表step
+         Progress3 -->代表rogressControl
