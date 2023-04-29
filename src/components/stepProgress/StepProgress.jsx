@@ -1,5 +1,5 @@
-import styles from './Progress.module.css'
-import ProgressGroup from './ProgressGroup'
+import styles from './StepProgress.module.css'
+import ProgressGroup from './StepProgressGroup'
 // import Icon from '../icons/Icon'
 function Progress() {
   const registerContent = [{ number: '1', option: '寄送地址' },
@@ -9,16 +9,15 @@ function Progress() {
     <div className={styles.progressContainer}>
       <div className={styles.progressTitle}>結帳
       </div>
-      
       <div className={styles.container}>
-
         {registerContent.map((content) => {
           return (
             <ProgressGroup content={content} />
           )
         })}
-
       </div>
+
+
 
     </div>
 
