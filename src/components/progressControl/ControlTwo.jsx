@@ -7,17 +7,14 @@ function ControlTwo() {
   return (
     <div>
       <div className={styles.controlContainer}>
+        <hr />
         <div className={styles.buttonLayout}>
           <div className={styles.buttonLeft}>
-            <PreviousButton content='上一步'>
-              <LeftArrow stroke="#DB7290" strokeWidth="0.2rem" />
-            </PreviousButton>
-          </div>
+            <PreviousButton />
+           </div>
           <div className={styles.buttonRight}>
-            <NextButton content='下一步'>
-              <RightArrow stroke="#DB7290" strokeWidth="0.2rem" />
-            </NextButton>
-          </div>
+            <NextButton />
+           </div>
         </div>
 
 

@@ -9,14 +9,14 @@ function ControlThree() {
       <div className={styles.controlContainer}>
         <div className={styles.buttonLayout}>
           <div className={styles.buttonLeft}>
-            <PreviousButton content='上一步'>
-              <LeftArrow stroke="#DB7290" strokeWidth="0.2rem" />
-            </PreviousButton>
+            <PreviousButton />
+              {/* <LeftArrow stroke="#000000" strokeWidth="0.2rem" /> */}
+           
           </div>
           <div className={styles.buttonRight}>
-            <NextButton content='確認下單'>
-              <RightArrow stroke="#DB7290" strokeWidth="0.2rem" />
-            </NextButton>
+            <NextButton />
+              {/* <RightArrow stroke="#DB7290" strokeWidth="0.2rem" /> */}
+            
           </div>
         </div>
       </div>

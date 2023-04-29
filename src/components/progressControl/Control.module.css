@@ -1,7 +1,6 @@
 .controlContainer {
   width: 100%;
   height: 72px;
-  border: 1px solid blue;
 }
 
 hr {
@@ -20,7 +19,7 @@ hr {
   border: 1px solid #ffffff;
 
 }
- 
+
 .icon {
   /* display: none; */
   font-size: 0.2rem;
@@ -29,46 +28,73 @@ hr {
 }
 
 .buttonLayout {
+  width: 100%;
+  height: 72px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+   width: 100%;
+  height: 72px;
 }
 
+/*button container  */
 .buttonRight {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   text-align: end;
-  border: 1px solid blue;
-}
+  display: flex;
+  justify-content: flex-end;
+ }
 
 .buttonLeft {
   width: 100%;
   text-align: start;
-  border: 1px solid blue;
-}
+ }
 
+/* 下一步和結帳按鈕 */
 .nextButton {
-  position: absolute;
-  right: 0;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 12px;
+  cursor: pointer;
+  border: none;
   width: 174px;
   height: 46px;
-  cursor: pointer;
-  border: 1px solid black;
   border-radius: 6px;
   background-color: #DB7290;
-  color: white;
+ }
+
+/* 上一步按鈕 */
+.previousButton {
+  width: 80px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  background-color:white;
+  border: none;
 }
 
-p {
-  border: 1px solid rgb(85, 9, 178);
+/* 上一步文字 */
+.leftText {
+  width: 42px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
-.buttonGroup {
+/* button 裏面的p 和 veg */
+.rightGroup {
   display: flex;
   margin: 0 auto;
   align-items: center;
   gap: 12px;
+  color: white;
+}
+
+.leftGroup {
+  display: flex;
+  margin: 0 auto;
+  gap: 5px;
+  align-items: center;
+  color:black;
+
 }
