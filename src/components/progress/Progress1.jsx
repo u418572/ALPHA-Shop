@@ -1,16 +1,16 @@
-import StepProgress from '../stepProgress/StepProgress'
+import StepProgress1 from '../stepProgress/StepProgress1'
 import Step1 from '../step/Step1'
 import CheckOne from '../progressControl/ControlOne'
 import styles from './Progress.module.css'
 
-function Progress1 () {
+function Progress1() {
   return (
-     <div className={styles.progressContainer}>
-      <StepProgress />
+    <div className={styles.progressContainer}>
+      <StepProgress1 />
       <Step1 />
       <CheckOne />
-     </div>
-   )
+    </div>
+  )
 }
 
 export default Progress1

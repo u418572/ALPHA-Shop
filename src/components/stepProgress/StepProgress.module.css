@@ -51,16 +51,16 @@ h1 {
 }
 
 .icon {
-  display: none;
-  position: absolute;
+  /* display: none; */
+  position:absolute;
   left: 0%;
   width: 26px;
   height: 26px;
 }
 
-.groupContainer:nth-child(3) .icon {
+/* .groupContainer:nth-child(3) .icon {
   display: inline;
-}
+} */
 
 .option {
   margin-right: 5px;
@@ -79,4 +79,12 @@ h1 {
 
 .groupContainer:nth-last-child(1) .bar {
   display: none;
+}
+
+#step1 {
+  border: 5px solid orange;
+}
+
+#step1 div:nth-child(3) {
+  border: 5px solid black;
 }
