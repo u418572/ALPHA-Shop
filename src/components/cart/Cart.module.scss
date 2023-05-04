@@ -1,0 +1,29 @@
+@use 'base';
+// cart
+.cartContainer {
+  width: 440px;
+  height: 492px;
+  border-radius: 8px;
+  padding-top: 20px;
+  border: 1px solid base.$light-gray;
+  background-color: base.$white;
+}
+
+%container {
+  width: 392px;
+  margin: 10px auto;
+
+}
+// CartTitle 
+
+.titleContainer {
+  @extend %container;
+  height: 22px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  @extend %testBorder;
+  color: #2A2A2A;
+
+}
