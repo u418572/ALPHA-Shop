@@ -7,7 +7,7 @@ function PreviousButton(props) {
       <button className={styles.previousButton}>
         <div className={styles.leftGroup}>
           <div>
-            <LeftArrow stroke="#000000" strokeWidth="1"  />
+            <LeftArrow stroke="#000000" strokeWidth="1" className='leftArr' />
           </div>
           
           <div className={styles.leftText}>上一步</div>

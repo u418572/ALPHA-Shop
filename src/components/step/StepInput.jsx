@@ -4,8 +4,8 @@ import './Input.css'
 function StepInput (props) {
  return (
       <div className={styles.inputGroup}>
-        <label htmlFor="" className={styles.inputTitle} >{props.title}</label>
-       <input type={props.type} className={props.inputStyle} placeholder={props.content}/>
+        <label htmlFor="name" className={styles.inputTitle} >{props.title}</label>
+       <input type={props.type} className={props.inputStyle} placeholder={props.content} name='name' id='name'/>
      </div>
   )
  }

@@ -47,20 +47,4 @@
   margin-right: 30px;
 }
 
-/* input[type="radio"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-   
-} */
-
- /* input[type="radio"] {
-  width: 30px;
-    height: 30px;
-  border-radius: 50%;
-  border: 1px solid red;
-  cursor: pointer;
- }
-
-   box-shadow: inset 0 0 0 5px $secondary-blue;
-   */
-
-/* input[type="radio"]::-webkit-slider-runnable-track, */
+ 

@@ -1,6 +1,7 @@
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
+
 .App {
   text-align: center;
 }
@@ -69,7 +70,18 @@
 .secondarySection {
   width: 100%;
   border: 2px solid red;
-  background-color: rgb(47, 197, 14);
   min-height: 600px;
+  padding-top: 32px;
+  display: flex;
+  justify-content: flex-end;
+
 }
 
+.mainTitle {
+  text-align: start;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  width: 90%;
+  margin: 0 auto;
+}

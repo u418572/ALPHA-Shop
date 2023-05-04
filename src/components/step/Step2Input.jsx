@@ -4,8 +4,8 @@ import './Input.css'
 function Step2Input(props) {
   return (
     <div className={styles.inputGroup}>
-      <label htmlFor="" className={props.inputStyle} >
-        <input type={props.type} className={styles.step2Input} placeholder={props.content} />
+      <label htmlFor="name" className={props.inputStyle} >
+        <input type={props.type} className={styles.step2Input} placeholder={props.content} name='name' id='name'/>
         <div className={styles.radioGroup}>
           <div className={styles.transport}>
             <div >{props.title}</div>
