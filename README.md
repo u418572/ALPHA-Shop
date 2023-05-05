@@ -3,6 +3,7 @@
 ![image](https://github.com/u418572/ALPHA-Shop/blob/main/src/components/imgs/step1.png)
 ![image](https://github.com/u418572/ALPHA-Shop/blob/main/src/components/imgs/step2.png)
 ![image](https://github.com/u418572/ALPHA-Shop/blob/main/src/components/imgs/step3.png)
+![image](https://github.com/u418572/ALPHA-Shop/blob/main/src/iconimg/images/alphashopCart.png)
 
 ## This project is currently built on
 
