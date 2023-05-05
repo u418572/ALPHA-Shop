@@ -30,7 +30,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
    
    **app.js**
 
-   1. Progress1 -->代表 寄送地址
+   1. Progress1 -->代表 寄送地址 (ALPHA Shop| 2/4 作業)
    2. Progress2-->代表 運送方式
    3. Progress3 -->代表 付款資訊
-   4. Cart -->代表 購物籃
+   4. Cart -->代表 購物籃  (ALPHA Shop|| 2/4 作業)
