@@ -27,8 +27,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
    2. /progress 引入 stepProgress , step , progressControl 三個 的 components,做成三個頁面
    3. /cart 引入此資料夾的components到Cart.jsx 分四個部分，CartTitle, Product, Freight, CartTotal 
    
-   
-**app.js**
+   **app.js**
 
    1. Progress1 -->代表 寄送地址
    2. Progress2-->代表 運送方式
