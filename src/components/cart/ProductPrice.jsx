@@ -1,11 +1,11 @@
 import styles from './Cart.module.scss'
 
-function ProductPriec() {
+function ProductPrice({product}) {
   return (
     <section>
-      <h3>ProductPrice</h3>
+     <h2>{product.price}</h2>
     </section>
   )
 }
 
-export default ProductPriec
+export default ProductPrice

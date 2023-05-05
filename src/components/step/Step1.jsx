@@ -11,7 +11,7 @@ function Step1() {
       <div className={styles.formContainer}>
         <div className={styles.inputLine}>
           <StepSelect title='稱謂' inputStyle='inputFirst' inputSpace='space' >
-            <option value="mr" selected>先生</option>
+            <option value="mr" required>先生</option>
             <option value="ms">女士</option>
             <option value="mx">不明</option>
           </StepSelect>

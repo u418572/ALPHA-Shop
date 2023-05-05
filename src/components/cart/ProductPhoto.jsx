@@ -1,10 +1,13 @@
 import styles from './Cart.module.scss'
 
-function ProductPhoto() {
+function ProductPhoto({product}) {
   return (
     <section>
-      <h3>ProductPhoto</h3>
+      <img src={product.img} alt="" className={styles.productPhoto}/>
     </section>
+      
+     
+    
   )
 }
 

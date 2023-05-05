@@ -1,5 +1,6 @@
 import styles from './StepProgress.module.css'
 import ProgressGroup from './StepProgressGroup'
+import { Fragment } from 'react'
 import './style.css'
 const registerContent = [{ number: '1', option: '寄送地址', step: 'address' },
 { number: '2', option: '運送方式', step: 'way' },
@@ -14,7 +15,10 @@ function StepProgress1() {
       <div className={styles.container} id='step1'>
         {registerContent.map((content) => {
           return (
-            <ProgressGroup content={content} />
+            <Fragment key={content.number}>
+              <ProgressGroup content={content} />
+            </Fragment>
+           
           )
         })}
       </div>

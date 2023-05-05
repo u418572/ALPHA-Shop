@@ -1,9 +1,14 @@
 import styles from './Cart.module.scss'
 
-function ProductName() {
+function ProductName({ product }) {
+
   return (
     <section>
-      <h3>ProductName</h3>
+
+
+      {/* <img src={item.img} alt="" /> */}
+      <h3>{product.name}</h3>
+
     </section>
   )
 }

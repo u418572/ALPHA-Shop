@@ -1,15 +1,23 @@
 import styles from './Cart.module.scss'
 import ProductPhoto from './ProductPhoto'
 import ProductName from './ProductName'
-import ProductPriec from './ProductPrice'
+import ProductPrice from './ProductPrice'
+import { Fragment } from 'react'
 
-function Product () {
+ function Product({ productDatas }) {
   return (
-    <div>product 
-      <ProductPhoto />
-      <ProductName />
-      <ProductPriec />
-    </div>
+    <Fragment   >
+      {productDatas.map(item => {
+        return (
+          <div className={styles.productContainer} key={item.id}>
+            <ProductPhoto product={item} />
+            <ProductName product={item} />
+            <ProductPrice product={item} />
+          </div>
+
+        )
+      })}
+    </Fragment>
   )
 }
 
