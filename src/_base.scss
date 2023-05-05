@@ -10,3 +10,9 @@ $light-gray: #a7aaaf;
 %testBorder {
   border: 1px solid red;
 }
+
+@mixin border($color) {
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color;
+ }

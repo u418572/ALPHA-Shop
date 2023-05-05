@@ -1,9 +1,9 @@
 import styles from './Cart.module.scss'
-
+import { MdAttachMoney } from 'react-icons/md'
 function ProductPrice({product}) {
   return (
-    <section>
-     <h2>{product.price}</h2>
+    <section className={styles.priceLayout}>
+      <h3>${product.price}</h3>
     </section>
   )
 }

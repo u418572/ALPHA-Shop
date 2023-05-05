@@ -1,7 +1,6 @@
 import styles from './Cart.module.scss'
-import {Fragment} from 'react'
 
-function CartTotal({productDatas}) {
+function CartTotal({productDatas, option}) {
    let count = 0
    productDatas.forEach(item =>
      count += (Number(item.price))
@@ -9,9 +8,13 @@ function CartTotal({productDatas}) {
     
   return (
     
-    <section className={styles.carTotalContainer}>
-      <div className={styles.cartTotalContent}>運費</div>
-      <div className={styles.cartTotalPriec}>{count}</div>
+    <section className={styles.freightContainer}>
+      <hr />
+      <div className={styles.checkPrice}>
+        <div className={styles.cartTotalOption}>{option}</div>
+        <div className={styles.cartTotalPriec}>${count}</div>
+      </div>
+
     </section>
   )
 }

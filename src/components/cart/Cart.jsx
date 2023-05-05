@@ -3,20 +3,22 @@ import CartTitle from './CartTitle'
 import CartTotal from './CartTotal'
 import Product from './Product'
 import Freight from './Freight'
+import ImgProduct1 from '../../iconimg/images/product-1.jpg'
+import ImgProduct2 from '../../iconimg/images/product-2.jpg'
 
 let content = [
   {
     id: '1',
     name: '破壞補丁修身牛仔褲',
-    img: 'https://picsum.photos/300/300?text=1',
-    price: 400,
-    quantity: 2,
+    img: ImgProduct1,
+    price: 3999,
+    quantity: 1,
   },
   {
     id: '2',
     name: '刷色直筒牛仔褲',
-    img: 'https://picsum.photos/300/300?text=2',
-    price: 800,
+    img: ImgProduct2,
+    price: 1299,
     quantity: 1,
   },
 ]
@@ -27,8 +29,9 @@ function Cart() {
     <section className={styles.cartContainer}>
       <CartTitle />
       <Product productDatas={datas} />
-      <Freight productDatas={datas} />
-      <CartTotal productDatas={datas} />
+      <Freight productDatas={datas} option='運費'/>
+      <CartTotal productDatas={datas} option='小計'/>
+ 
     </section>
   )
 }

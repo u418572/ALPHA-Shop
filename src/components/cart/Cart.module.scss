@@ -3,7 +3,7 @@
 // cart
 .cartContainer {
   width: 440px;
-  height: 492px;
+  height: 550px;
   border-radius: 8px;
   padding-top: 20px;
   border: 1px solid base.$light-gray;
@@ -13,7 +13,6 @@
 %container {
   width: 392px;
   margin: 10px auto;
-
 }
 
 // CartTitle 
@@ -25,17 +24,16 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
-  @extend %testBorder;
   color: #2A2A2A;
 }
+
 // product
 .productContainer {
   @extend %container;
   height: 120px;
-  @extend %testBorder;
   display: flex;
-  justify-content:space-between;
-  flex-direction:row;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -43,8 +41,91 @@
   width: 100px;
   height: 100px;
   border-radius: 10px;
-  @extend %testBorder;
 }
 
 // cartTotal
 
+// name
+.nameContainer {
+  position: relative;
+  width: 158px;
+  height: 102px;
+  display: flex;
+  flex-direction: column;
+
+  .productName {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 900;
+  }
+}
+
+.nameIcon {
+  position: absolute;
+  top: 42px;
+  left: -10px;
+  display: flex;
+  justify-content: space-around;
+  width: 116px;
+  height: 50px;
+
+  span {
+    width: 54px;
+    height: 17px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 17px;
+  }
+}
+
+.setIcon {
+  stroke: BLACK;
+  stroke-width: 2px;
+  fill: #F0F0F5;
+}
+
+.iconBlock {
+  width: 100px;
+  height: 100px;
+}
+
+//  price
+.priceLayout {
+  width: 52px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+//  freight
+
+.freightContainer {
+  @extend %container;
+  height: 37px;
+  margin: 50px auto;
+
+  hr {
+    width: 392px;
+    height: 1px;
+    background-color: #F0F0F5;
+    border: none;
+  }
+
+  .cartTotalOption {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .cartTotalPriec {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .checkPrice {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+}
