@@ -3,8 +3,8 @@ import CartTitle from './CartTitle'
 import CartTotal from './CartTotal'
 import Product from './Product'
 import Freight from './Freight'
-import ImgProduct1 from '../../iconimg/images/product-1.jpg'
-import ImgProduct2 from '../../iconimg/images/product-2.jpg'
+import ImgProduct1 from 'assets/images/product-1.jpg'
+import ImgProduct2 from 'assets/images/product-1.jpg'
 
 let content = [
   {
