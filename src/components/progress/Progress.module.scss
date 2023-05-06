@@ -1,0 +1,155 @@
+@use 'base';
+
+%container {
+  width: 100%;
+  margin: 0 auto;
+  @include base.border(red);
+}
+
+@mixin inputStyle ($width, $height, $borderColor ) {
+  width: $width;
+  height: $height;
+  border-radius: 4px;
+  @include base.border($borderColor);
+}
+
+@mixin inputGroup ($width, $height, $borderColor ) {
+  width: $width;
+  height: $height;
+  border-radius: 4px;
+  @include base.border($borderColor);
+}
+
+// progress
+.progressContainer {
+  @extend %container;
+  height: 24px;
+  color: base.$light-gray;
+  position: relative;
+  margin: 30px 0;
+
+  .porgressOption {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .progressGroup {
+      position: relative;
+      width: 100px;
+      height: 24px;
+      display: flex;
+
+      &:nth-child(1) .progressNumber {
+        background-color: black;
+        color: white;
+      }
+
+      &:nth-child(2) .progressNumber {
+        opacity: 0;
+      }
+
+      .progressNumber {
+        width: 24px;
+        font-size: 1rem;
+        line-height: 24px;
+        border: 1px solid base.$light-gray;
+        border-radius: 50%;
+        z-index: 2;
+        background-color: white;
+      }
+
+      .ProgressComplete {
+        position: absolute;
+        left: 0;
+      }
+
+      .groupWords {
+        flex: 1;
+        line-height: 24px;
+        font-size: 1rem;
+        font-weight: 700px;
+        color: base.$light-gray;
+        margin-left: 10px;
+      }
+
+      &:nth-child(1) .groupWords {
+        color: black;
+      }
+    }
+  }
+
+  .doneGroup {
+    width: 300px;
+    height: 24px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 40%;
+    left: 23%;
+
+    .progressDone {
+      width: 70px;
+      height: 2px;
+      background: black;
+    }
+
+    .progressUndone {
+      width: 70px;
+      height: 2px;
+      background: base.$light-gray;
+    }
+  }
+
+
+}
+
+// form
+.formContainer {
+  @extend %container;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+
+  .formTitle {
+    width: 96px;
+    height: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}
+
+.stepContainer {
+  @extend %container;
+  flex: 1;
+}
+
+
+.nameInput {
+  @include inputStyle(255px, 40px, base.$light-gray )
+}
+
+.cityGroup {
+  @include inputStyle(160px, 64px, red);
+
+  .citySelect {
+    @include inputStyle(160px, 40px, base.$light-gray )
+  }
+}
+
+.addressGroup {
+  @include inputStyle(350px, 64px, red);
+
+  .addressInput {
+    @include inputStyle(350px, 40px, base.$light-gray )
+  }
+
+}
+
+// button
+.buttonhContainer {
+  @extend %container;
+  height: 24px;
+  color: red;
+}
