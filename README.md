@@ -1,9 +1,9 @@
 # Getting Started with Create React App
 
-![image](https://github.com/u418572/ALPHA-Shop/blob/main/src/components/imgs/step1.png)
-![image](https://github.com/u418572/ALPHA-Shop/blob/main/src/components/imgs/step2.png)
-![image](https://github.com/u418572/ALPHA-Shop/blob/main/src/components/imgs/step3.png)
-![image](https://github.com/u418572/ALPHA-Shop/blob/main/src/iconimg/images/alphashopCart.png)
+![image](https://github.com/u418572/ALPHA-Shop/blob/main/src/assets/images/s1.png)
+![image](https://github.com/u418572/ALPHA-Shop/blob/main/src/assets/images/s2.png)
+![image](https://github.com/u418572/ALPHA-Shop/blob/main/src/assets/images/s3.png)
+
 
 ## This project is currently built on
 
