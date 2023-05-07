@@ -1,13 +1,14 @@
-import styles from 'components/progress/Progress.module.scss'
 import Progress from 'components/progress/Progress'
 import ProgressForm from 'components/progress/ProgressForm'
-
+import { Titles } from 'components/progress/Titles'
+import ProgressButton from 'components/progress/ProgressButton'
 
 function Imformation() {
   return (
     <>
       <Progress />
-      <ProgressForm title='寄送地址'/>
+      <ProgressForm title={Titles} />
+      <ProgressButton step='確認下單'/>
     </>
   )
 }

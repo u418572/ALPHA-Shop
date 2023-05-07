@@ -3,21 +3,22 @@
 %container {
   width: 100%;
   margin: 0 auto;
-  @include base.border(red);
-}
-
-@mixin inputStyle ($width, $height, $borderColor ) {
-  width: $width;
-  height: $height;
-  border-radius: 4px;
-  @include base.border($borderColor);
+  // @include base.border(red);
 }
 
 @mixin inputGroup ($width, $height, $borderColor ) {
   width: $width;
   height: $height;
-  border-radius: 4px;
   @include base.border($borderColor);
+  text-align: left;
+}
+
+@mixin inputStyle ($radius) {
+  border-radius: $radius;
+}
+
+label {
+  cursor: pointer;
 }
 
 // progress
@@ -42,10 +43,19 @@
       &:nth-child(1) .progressNumber {
         background-color: black;
         color: white;
+        opacity: 0;
       }
 
       &:nth-child(2) .progressNumber {
         opacity: 0;
+        color: black;
+        border-color: black;
+      }
+
+      &:nth-child(3) .progressNumber {
+        opacity: 1;
+        color: black;
+        border-color: black;
       }
 
       .progressNumber {
@@ -61,6 +71,7 @@
       .ProgressComplete {
         position: absolute;
         left: 0;
+
       }
 
       .groupWords {
@@ -97,7 +108,7 @@
     .progressUndone {
       width: 70px;
       height: 2px;
-      background: base.$light-gray;
+      background: black;
     }
   }
 
@@ -115,8 +126,24 @@
     width: 96px;
     height: 24px;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 24px;
+    margin: 20px 0;
+  }
+
+  .formBlock {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: black;
+    cursor: pointer;
   }
 }
 
@@ -125,31 +152,159 @@
   flex: 1;
 }
 
-
-.nameInput {
-  @include inputStyle(255px, 40px, base.$light-gray )
-}
-
 .cityGroup {
-  @include inputStyle(160px, 64px, red);
+  @include inputGroup(180PX, 70PX, white);
 
   .citySelect {
-    @include inputStyle(160px, 40px, base.$light-gray )
+    @include inputGroup(100%, 40px, base.$light-gray);
+    @include inputStyle(4px);
+    cursor: pointer;
+
   }
 }
 
 .addressGroup {
-  @include inputStyle(350px, 64px, red);
+  @include inputGroup(370PX, 70PX, white);
 
   .addressInput {
-    @include inputStyle(350px, 40px, base.$light-gray )
+    @include inputGroup(100%, 40px, base.$light-gray);
+    @include inputStyle(4px);
+    cursor: pointer;
   }
 
 }
 
+.telGroup {
+  @include inputGroup(275PX, 70PX, white);
+
+  .telInput {
+    @include inputGroup(100%, 40px, base.$light-gray);
+    @include inputStyle(4px);
+  }
+}
+
+// step2
+.expressBlock {
+  @include inputGroup(100%, 70PX, white);
+  display: flex;
+  margin: 10px 0;
+
+  .expressInput {
+    @include inputGroup(100%, 70PX, base.$light-gray);
+    @include inputStyle(4px);
+    display: flex;
+  }
+
+  .radioBlock {
+    @include inputGroup(50px, 50PX, white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input {
+    cursor: pointer;
+
+    &[type="radio"] {
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      @include base.border(black);
+      @include inputStyle(50%);
+
+      &:checked {
+        box-shadow: inset 0 0 0 5px black;
+      }
+
+    }
+
+  }
+
+  .expressContent {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    @include inputGroup(100%, 70PX, white);
+
+    .expressInfo {
+      @include inputGroup(100%, 24PX, white);
+      font-weight: 900;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .expressTime {
+      font-weight: 600;
+    }
+  }
+}
+
+// step3
+.step3Container {
+  @extend %container;
+  flex: 1;
+
+  input {
+    padding-left: 10px;
+  }
+}
+
+
 // button
-.buttonhContainer {
+.buttonContainer {
   @extend %container;
   height: 24px;
-  color: red;
+  margin-top: 30px;
+
+  hr {
+    width: 100%;
+    height: 2px;
+    background: base.$light-gray;
+  }
+}
+
+.buttonBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.setLeftArrow {
+  stroke: BLACK;
+  stroke-width: 0.5px;
+  fill: #F0F0F5;
+}
+
+.setRightArrow {
+  stroke: white;
+  stroke-width: 0.5px;
+  fill: #F0F0F5;
+}
+
+.previous {
+  display: flex;
+  width: 77px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 24px;
+  color: black;
+  opacity: 1;
+}
+
+.next {
+  display: flex;
+  width: 174px;
+  height: 46px;
+  font-size: 14px;
+  line-height: 46px;
+  background-color: #F67599;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  & p {
+    margin-right: 10px;
+  }
+
 }

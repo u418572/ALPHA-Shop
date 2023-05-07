@@ -1,18 +1,20 @@
 import styles from 'components/progress/Progress.module.scss'
 import Step1 from 'components/progress/Step1'
-import {Title} from 'components/progress/Title' //all titles
+import Step2 from 'components/progress/Step2'
+import Step3 from 'components/progress/Step3'
 
 
 
-function ProgressForm(props) {
-  const titleCollection = Title.map(item =>item)
+
+function ProgressForm({ title }) {
+
   return (
     <form action="" className={styles.formContainer}>
-      <div className={styles.formTitle}>{props.title}</div>
-      <Step1 title={titleCollection}/>
-      
-     </form>
-    )
+      {/* <Step1  title={title} /> */}
+      {/* <Step2 title={title}/> */}
+      <Step3 title={title} />
+    </form>
+  )
 }
 
 export default ProgressForm

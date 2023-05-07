@@ -25,12 +25,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 **src/components** 
 
    1. /icons  裏面有所有用得到的icons
-   2. /progress 引入 stepProgress , step , progressControl 三個 的 components,做成三個頁面
+   2. /progress Imformation 引入 Progress , ProgressForm , progressButton 三個 的 components,做成三個頁面, export to app.js
    3. /cart 引入此資料夾的components到Cart.jsx 分四個部分，CartTitle, Product, Freight, CartTotal 
    
    **app.js**
 
-   1. Progress1 -->代表 寄送地址 (ALPHA Shop| 2/4 作業)
-   2. Progress2-->代表 運送方式
-   3. Progress3 -->代表 付款資訊
-   4. Cart -->代表 購物籃  (ALPHA Shop|| 2/4 作業)
+   1. Imformation --> 代表左邊購物流程頁面更替
+   2. Cart -->代表 購物籃  (ALPHA Shop|| 2/4 作業)
+
+**相片**
+
+   1. 目前有三張購物流程頁面
