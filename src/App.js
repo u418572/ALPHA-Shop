@@ -1,13 +1,12 @@
-// import logo from './logo.svg';
 import Imformation from 'components/progress/Imformation';
 import Cart from 'components/cart/Cart';
+import { useState } from 'react'
 import './App.css';
 
 function App() {
-  return (
+   return (
     <div className="App">
-
-      <div >
+       <div >
         <div className='mainTitle'>結帳
         </div>
         <div className="main-container"  >
@@ -19,10 +18,7 @@ function App() {
           </div>
         </div>
       </div>
-
-
-
-    </div>
+     </div>
   );
 }
 

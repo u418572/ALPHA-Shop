@@ -1,3 +1,4 @@
+import {useState} from 'react'
 import styles from 'components/cart/Cart.module.scss'
 import CartTitle from 'components/cart/CartTitle'
 import CartTotal from 'components/cart/CartTotal'
@@ -22,6 +23,8 @@ let content = [
     quantity: 1,
   },
 ]
+
+ 
 
 function Cart() {
   let datas = content.map(item => item)

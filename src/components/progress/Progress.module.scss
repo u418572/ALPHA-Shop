@@ -3,8 +3,7 @@
 %container {
   width: 100%;
   margin: 0 auto;
-  // @include base.border(red);
-}
+ }
 
 @mixin inputGroup ($width, $height, $borderColor ) {
   width: $width;
@@ -43,20 +42,10 @@ label {
       &:nth-child(1) .progressNumber {
         background-color: black;
         color: white;
-        opacity: 0;
+        opacity: 10;
       }
 
-      &:nth-child(2) .progressNumber {
-        opacity: 0;
-        color: black;
-        border-color: black;
-      }
-
-      &:nth-child(3) .progressNumber {
-        opacity: 1;
-        color: black;
-        border-color: black;
-      }
+       
 
       .progressNumber {
         width: 24px;
@@ -64,7 +53,6 @@ label {
         line-height: 24px;
         border: 1px solid base.$light-gray;
         border-radius: 50%;
-        z-index: 2;
         background-color: white;
       }
 
@@ -89,6 +77,16 @@ label {
     }
   }
 
+  .darkBack {
+    width: 24px;
+    font-size: 1rem;
+    line-height: 24px;
+    border: 1px solid base.$light-gray;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+  }
+
   .doneGroup {
     width: 300px;
     height: 24px;
@@ -99,16 +97,16 @@ label {
     top: 40%;
     left: 23%;
 
-    .progressDone {
+    .done {
       width: 70px;
       height: 2px;
       background: black;
     }
 
-    .progressUndone {
+    .unDone {
       width: 70px;
       height: 2px;
-      background: black;
+      background: base.$light-gray;
     }
   }
 
@@ -118,7 +116,7 @@ label {
 // form
 .formContainer {
   @extend %container;
-  min-height: 350px;
+  height: 350px;
   display: flex;
   flex-direction: column;
 
@@ -149,7 +147,7 @@ label {
 
 .stepContainer {
   @extend %container;
-  flex: 1;
+
 }
 
 .cityGroup {
@@ -242,7 +240,7 @@ label {
 // step3
 .step3Container {
   @extend %container;
-  flex: 1;
+  // flex: 1;
 
   input {
     padding-left: 10px;
@@ -267,6 +265,7 @@ label {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+
 }
 
 .setLeftArrow {
@@ -288,6 +287,7 @@ label {
   font-size: 14px;
   line-height: 24px;
   color: black;
+  cursor: pointer;
   opacity: 1;
 }
 
@@ -302,13 +302,11 @@ label {
   align-items: center;
   justify-content: center;
   color: white;
+  cursor: pointer;
 
   & p {
     margin-right: 10px;
   }
 
 }
-
-.active {
-  display: none
-}
+ 

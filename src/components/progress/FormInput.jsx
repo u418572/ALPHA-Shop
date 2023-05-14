@@ -1,12 +1,9 @@
  
 function FormInput(props) {
-  
-  return (
+   return (
     <>
       <input type="text" name='name' placeholder={props.place} />
-
-    </>
+     </>
   )
 }
-
-export default FormInput
+ export default FormInput

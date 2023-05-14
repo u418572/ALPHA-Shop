@@ -4,8 +4,7 @@ import Appellation from './Appellation'
  
 function Step1({ title }) {
   return (
-    // <form className={styles.formContainer}>
-      <>
+       <>
         <div className={styles.formTitle}>{title.expressAddress}</div>
         <div className={styles.stepContainer}>
 
@@ -43,9 +42,7 @@ function Step1({ title }) {
           </div>
         </div>
       </>
-     
-    // </form>
-  )
+   )
 }
 
 export default Step1

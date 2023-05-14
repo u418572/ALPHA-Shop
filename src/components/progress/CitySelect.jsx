@@ -1,8 +1,7 @@
 import styles from 'components/progress/Progress.module.scss'
 import { Cities } from 'components/progress/Cities'
 
-
-function CitySelect({title}) {
+ function CitySelect({title}) {
   const allCities = Cities.map(item => item)
 
   return (
