@@ -118,7 +118,7 @@ label {
 // form
 .formContainer {
   @extend %container;
-  height: 350px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
 
@@ -307,4 +307,8 @@ label {
     margin-right: 10px;
   }
 
+}
+
+.active {
+  display: none
 }

@@ -10,8 +10,8 @@ function ProgressForm({ title }) {
 
   return (
     <form action="" className={styles.formContainer}>
-      {/* <Step1  title={title} /> */}
-      {/* <Step2 title={title}/> */}
+       <Step1  title={title} /> 
+      <Step2 title={title}/>
       <Step3 title={title} />
     </form>
   )
