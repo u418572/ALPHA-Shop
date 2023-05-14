@@ -1,6 +1,5 @@
 import Imformation from 'components/progress/Imformation';
 import Cart from 'components/cart/Cart';
-import { useState } from 'react'
 import './App.css';
 
 function App() {

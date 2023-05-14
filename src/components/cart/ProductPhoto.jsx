@@ -5,10 +5,7 @@ function ProductPhoto({product}) {
     <section>
       <img src={product.img} alt="" className={styles.productPhoto}/>
     </section>
-      
-     
-    
-  )
+   )
 }
 
 export default ProductPhoto
