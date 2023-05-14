@@ -1,4 +1,4 @@
-import styles from './Cart.module.scss'
+import styles from 'components/cart/Cart.module.scss'
 
 function ProductPhoto({product}) {
   return (

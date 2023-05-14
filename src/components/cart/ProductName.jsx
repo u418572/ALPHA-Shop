@@ -1,4 +1,4 @@
-import styles from './Cart.module.scss'
+import styles from 'components/cart/Cart.module.scss'
 import { ReactComponent as Minus } from 'assets/icons/minus.svg'
 import { ReactComponent as Plus } from 'assets/icons/plus.svg'
 

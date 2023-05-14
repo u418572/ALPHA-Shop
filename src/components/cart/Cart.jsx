@@ -1,8 +1,8 @@
-import styles from './Cart.module.scss'
-import CartTitle from './CartTitle'
-import CartTotal from './CartTotal'
-import Product from './Product'
-import Freight from './Freight'
+import styles from 'components/cart/Cart.module.scss'
+import CartTitle from 'components/cart/CartTitle'
+import CartTotal from 'components/cart/CartTotal'
+import Product from 'components/cart/Product'
+import Freight from 'components/cart/Freight'
 import ImgProduct1 from 'assets/images/product-1.jpg'
 import ImgProduct2 from 'assets/images/product-1.jpg'
 

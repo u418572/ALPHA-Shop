@@ -1,7 +1,7 @@
-import styles from './Cart.module.scss'
-import ProductPhoto from './ProductPhoto'
-import ProductName from './ProductName'
-import ProductPrice from './ProductPrice'
+import styles from 'components/cart/Cart.module.scss'
+import ProductPhoto from 'components/cart/ProductPhoto'
+import ProductName from 'components/cart/ProductName'
+import ProductPrice from 'components/cart/ProductPrice'
 import { Fragment } from 'react'
 
  function Product({ productDatas }) {
