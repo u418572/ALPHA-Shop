@@ -1,6 +1,6 @@
 import styles from 'components/cart/Cart.module.scss'
 
-function Freight({ option }) {
+function Freight({freight, option }) {
    
 
   return (
@@ -9,7 +9,7 @@ function Freight({ option }) {
       <hr />
       <div className={styles.checkPrice}>
         <div className={styles.cartTotalOption}>{option}</div>
-        <div className={styles.cartTotalPriec}>免費</div>
+        <div className={styles.cartTotalPriec}>{freight}</div>
       </div>
       
     </section>

@@ -7,7 +7,7 @@ export const Production = [
     name: '破壞補丁修身牛仔褲',
     img: ImgProduct1,
     price: 3999,
-    quantity: 1,
+    quantity: 0,
 
   },
   {
@@ -15,6 +15,6 @@ export const Production = [
     name: '刷色直筒牛仔褲',
     img: ImgProduct2,
     price: 1299,
-    quantity: 1,
+    quantity: 0,
   }
 ]

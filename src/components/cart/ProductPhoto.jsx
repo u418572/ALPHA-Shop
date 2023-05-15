@@ -1,9 +1,9 @@
 import styles from 'components/cart/Cart.module.scss'
 
-function ProductPhoto({product}) {
+function ProductPhoto({data}) {
   return (
     <section>
-      <img src={product.img} alt="" className={styles.productPhoto}/>
+      <img src={data.img} alt="" className={styles.productPhoto}/>
     </section>
    )
 }

@@ -3,9 +3,9 @@ import Cart from 'components/cart/Cart';
 import './App.css';
 
 function App() {
-   return (
+  return (
     <div className="App">
-       <div >
+      <div >
         <div className='mainTitle'>結帳
         </div>
         <div className="main-container"  >
@@ -17,7 +17,7 @@ function App() {
           </div>
         </div>
       </div>
-     </div>
+    </div>
   );
 }
 
