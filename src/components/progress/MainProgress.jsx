@@ -7,7 +7,7 @@ import Step1 from 'components/progress/Step1'
 import Step2 from 'components/progress/Step2'
 import Step3 from 'components/progress/Step3'
 
-function Imformation() {
+function MainProgress() {
   const [count, setCount] = useState(1)
   function nextClick() {
     if (count < 4 && count >= 1) {
@@ -41,4 +41,4 @@ function Imformation() {
   )
 }
 
-export default Imformation
+export default MainProgress

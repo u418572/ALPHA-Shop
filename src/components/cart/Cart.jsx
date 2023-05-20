@@ -48,7 +48,7 @@ function Testcart() {
             //原來KEY 可以直接加在components  上面
             key={item.id} />
         ))}
-        <Freight option='運費' freight={(subTotal > 1000) ? '免費' : ((subTotal === 0) ? '' : '60元')} />
+        <Freight option='運費' freight={(subTotal > 1000) ? '免費' : ((subTotal === 0) ? '尚未有數量' : '60元')} />
         <CartTotal total={subTotal} option='小計' />
       </section>
     </Fragment>

@@ -1,4 +1,4 @@
-import Imformation from 'components/progress/Imformation';
+import MainProgress from 'components/progress/MainProgress';
 import Cart from 'components/cart/Cart';
 import './App.css';
 
@@ -10,7 +10,7 @@ function App() {
         </div>
         <div className="main-container"  >
           <div className="primarySection">
-            <Imformation />
+            <MainProgress />
           </div>
           <div className="secondarySection">
             <Cart />
