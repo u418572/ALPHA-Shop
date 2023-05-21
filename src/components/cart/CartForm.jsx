@@ -1,14 +1,13 @@
 import styles from 'components/cart/Cart.module.scss'
 import ProductPrice from 'components/cart/ProductPrice'
 import { useContext } from 'react'
-import { CartContext } from 'components/cart/CartContext'
+import { CartContext } from 'components/Context/CartContext'
 import ProductPhoto from 'components/cart/ProductPhoto'
 import ProductName from 'components/cart/ProductName'
 
 function CartForm() {
   const { initData, setInitData } = useContext(CartContext)
-  console.log('cartform', initData)
-  return (
+   return (
     <>
       <div className={styles.formContainer} >
         {initData.map(item => (
@@ -17,11 +16,11 @@ function CartForm() {
             <ProductName data={item} />
             <ProductPrice data={item} />
           </div>
-         ))}
-       </div>
+        ))}
+      </div>
     </>
-   )
+  )
 }
 export default CartForm
 
-   
+

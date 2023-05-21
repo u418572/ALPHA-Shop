@@ -1,6 +1,5 @@
-import MainProgress from 'components/progress/MainProgress';
-import Cart from 'components/cart/Cart';
-import CartApp from 'components/cart/CartApp'
+
+import MainApp from 'components/MainApp';
 // import {useContext} from 'react'
 // import { CartContext } from 'components/cart/CartContext';
 import './App.css';
@@ -8,19 +7,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      
-      <div >
+       <div >
         <div className='mainTitle'>結帳
         </div>
         <div className="main-container"  >
-          <div className="primarySection">
-            <MainProgress />
-          </div>
-          <div className="secondarySection">
-            <Cart />
-            {/* <CartApp /> */}
-          </div>
-        </div>
+          <MainApp />
+         </div>
       </div>
     </div>
   );

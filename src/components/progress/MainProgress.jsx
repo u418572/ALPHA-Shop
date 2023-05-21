@@ -27,6 +27,7 @@ function MainProgress() {
 
   return (
     <>
+      <div className="primarySection">
       <Progress icon={count} />
       <form className={styles.formContainer}>
         {count === 1 && <Step1 title={Titles} />}
@@ -37,6 +38,7 @@ function MainProgress() {
         nextClick={nextClick}
         prevClick={prevClick}
       />
+      </div>
     </>
   )
 }

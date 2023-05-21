@@ -2,11 +2,11 @@ import styles from 'components/cart/Cart.module.scss'
 import { ReactComponent as Minus } from 'assets/icons/minus.svg'
 import { ReactComponent as Plus } from 'assets/icons/plus.svg'
 import { useContext } from 'react'
-import { CartContext } from 'components/cart/CartContext'
+import { CartContext } from 'components/Context/CartContext'
 
-function ProductName({data}) {
+function ProductName({ data }) {
   const { initData, setInitData } = useContext(CartContext)
- // 函式 代入對應的 id 為參數，如果id和 initData 的一樣。就改變 initData這個 id 裏的 quantity
+   // 函式 代入對應的 id 為參數，如果id和 initData 的一樣。就改變 initData這個 id 裏的 quantity
   // map 完後，會產生新的陣列，setInitData就可以享用了。
   function addItem(id) {
     setInitData(initData.map(item => {
@@ -18,10 +18,14 @@ function ProductName({data}) {
     )
   }
 
+  // 要注意如果有參數的函式成為props 後，要怎麼給子層
+  // 先在父層建立 props -> addClick={ getPlusClick } minusClick = { getMinusClick }
+  // 子層自有的函式直接onClick = {() => minusItem(data.id)
+
   function minusItem(id) {
     setInitData(initData.map(item => {
       if (item.id === id) {
-        return { ...item, quantity:(item.quantity===0)? 0 : item.quantity -1 }
+        return { ...item, quantity: (item.quantity === 0) ? 0 : item.quantity - 1 }
       }
       return { ...item }
     })

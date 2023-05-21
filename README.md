@@ -26,11 +26,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
    1. /icons  裏面有所有用得到的icons
    2. /progress /MainProgress 引入 Progress , ProgressForm , progressButton 三個 的 components,做成三個頁面, export to app.js
-   3. /cart 引入此資料夾的components到Cart.jsx 分四個部分，CartTitle, Product, Freight, CartTotal 
+   3. /cart 引入此資料夾的components到Cart.jsx 分四個部分，CartTitle, CartForm , Freight, CartTotal 
    
    **app.js**
 
-   1. Imformation --> 代表左邊購物流程頁面更替
+   1. MainPorgress --> 代表左邊購物流程頁面更替
    2. Cart -->代表 購物籃  (ALPHA Shop|| 4/4 作業)
 
 **相片**
