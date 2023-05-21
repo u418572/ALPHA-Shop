@@ -1,15 +1,13 @@
-import {createContext, useState} from 'react'
-// import {useContext} from 'react'
-const GuestInfo = {
+import {createContext} from 'react'
+ 
+const GuestInfo =[ {
+  id: '0',
   name:'',
   number: '',
   expired:'',
-  ccv:''
-}
+  cvc:'',
+}]
 
 export const GuestContext = createContext(GuestInfo)
 
-// export const BaseContext = () => {
-//   const [guest, setGuest] = useState({})
  
-//   }

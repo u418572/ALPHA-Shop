@@ -8,14 +8,12 @@ import { useContext, useState } from 'react'
 function MainApp() {
   const [initData, setInitData] = useState(Production)
   let person= useContext(GuestContext)
-  const [guest, setGuest]= useState(person)
- 
- 
-  let subTotal = 0;
-
-  //用遍歷的方式將價錢加總起來
+  const [guest, setGuest]= useState(person[0])
+   let subTotal = 0;
+   //用遍歷的方式將價錢加總起來
   initData.forEach(item => subTotal += item.price * item.quantity)
-   console.log('person:',guest)
+    person[0].subTotal= subTotal
+   
   return (
     <>
       <GuestContext.Provider value={{ guest,setGuest}}>
@@ -24,14 +22,7 @@ function MainApp() {
           <Cart subTotal={subTotal} />
         </CartContext.Provider>
       </GuestContext.Provider>
-
-
-
-
-
-
-
-    </>
+     </>
   )
 }
 

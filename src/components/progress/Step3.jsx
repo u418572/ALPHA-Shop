@@ -1,13 +1,10 @@
 import styles from 'components/progress/Progress.module.scss'
- import {useState, useContext} from 'react'
+ import { useContext} from 'react'
  import {GuestContext} from 'components/Context/GuestContext'
- import {GuestInfo} from 'components/Context/GuestContext'
-
+ 
 function Step3({ title }) {
   const {guest, setGuest} = useContext(GuestContext)
-  console.log('guest:',guest)
-  
- 
+   
   return (
     <>
       <div className={styles.formTitle}>{title.creditTitle}</div>
