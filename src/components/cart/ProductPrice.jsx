@@ -1,9 +1,9 @@
 import styles from 'components/cart/Cart.module.scss'
 
- function ProductPrice({product, amount}) {
+ function ProductPrice({data}) {
   return (
     <section className={styles.priceLayout}>
-      <h3>${product.price}*{amount}</h3>
+      <h3>${data.price}*{data.quantity}</h3>
     </section>
   )
 }

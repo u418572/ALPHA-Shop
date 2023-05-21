@@ -37,6 +37,27 @@
   align-items: center;
 }
 
+.formContainer {
+  @extend %container;
+  min-height: 120px;
+  display: flex;
+  justify-content:center;
+  flex-direction:column;
+   
+  border: 1px solid blue;
+}
+
+.shopItem {
+  @extend %container;
+  // min-height: 120px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+
 .productPhoto {
   width: 100px;
   height: 100px;

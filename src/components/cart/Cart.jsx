@@ -1,56 +1,51 @@
 import styles from 'components/cart/Cart.module.scss'
-import CartProduct from 'components/cart/CartProduct'
+import CartProduct from 'components/cart/ProductName'
 import { Fragment } from 'react'
 import CartTitle from 'components/cart/CartTitle'
 import { Production } from 'components/cart/Production'
 import CartTotal from 'components/cart/CartTotal'
 import Freight from 'components/cart/Freight'
-import { useState } from 'react'
-
+import { useState, useContext } from 'react'
+import CartForm from 'components/cart/CartForm'
+import { CartContext } from 'components/cart/CartContext'
 function Testcart() {
-  const [initData, setInitData] = useState(Production) 
-
-  // 函式 代入對應的 id 為參數，如果id和 initData 的一樣。就改變 initData這個 id 裏的 quantity 
-  // map 完後，會產生新的陣列，setInitData就可以享用了。
-  function getPlusClick(id) {
-    setInitData(initData.map(item => {           
-      if (item.id === id) {
-        return { ...item, quantity: item.quantity + 1 }
-      }
-      return { ...item }
-    }))
-  }
-
-  function getMinusClick(id) {
-    setInitData(initData.map(item => {
-      if (item.id === id) {
-        return { ...item, quantity: (item.quantity === 0) ? 0 : item.quantity - 1 }
-      }
-      return { ...item }
-    }))
-  }
-
+  const [initData, setInitData] = useState(Production)
+  console.log('這是Cart的:',initData)
+  
   let subTotal = 0;
   //用遍歷的方式將價錢加總起來
   initData.forEach(item => subTotal += item.price * item.quantity)
 
-  console.log(initData)
+  // console.log(initData)
   return (
     <Fragment   >
-      <section className={styles.cartContainer}>
-        <CartTitle />
-        {initData.map(item => (
-          <CartProduct
-            data={item}
-            //要注意這裏有參數的函式成為props 後，子層要怎麼使用
-            plusClick={getPlusClick}
-            minusClick={getMinusClick}
-            //原來KEY 可以直接加在components  上面
-            key={item.id} />
-        ))}
-        <Freight option='運費' freight={(subTotal > 1000) ? '免費' : ((subTotal === 0) ? '尚未有數量' : '60元')} />
-        <CartTotal total={subTotal} option='小計' />
-      </section>
+      <CartContext.Provider value={{ initData, setInitData }}>
+        <section className={styles.cartContainer}>                
+            <CartTitle />
+            <CartForm />
+
+        
+          {/* {initData.map(item => (
+            <CartProduct
+              data={item}
+              //要注意這裏有參數的函式成為props 後，子層要怎麼使用
+              plusClick={getPlusClick}
+              minusClick={getMinusClick}
+              //原來KEY 可以直接加在components  上面
+              key={item.id} />
+          ))} */}
+          <Freight option='運費' freight={(subTotal > 1000) ? '免費' : ((subTotal === 0) ? '滿600免運費' : '60元')} />
+          <CartTotal total={subTotal} option='小計' />
+        </section>
+
+
+      </CartContext.Provider>
+
+
+
+
+
+
     </Fragment>
   )
 }
